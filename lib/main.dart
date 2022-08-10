@@ -1,8 +1,6 @@
 import 'package:flame/flame.dart';
 import 'package:flame/game.dart';
-import 'package:flamplate/games/biginer/draw_cross.dart';
-import 'package:flamplate/games/biginer/move_cross.dart';
-import 'package:flamplate/games/biginer/rotate_cross.dart';
+import 'package:flamplate/games/biginer/base_sprite/base_anime.dart';
 import 'package:flutter/material.dart';
 
 Future<void> main() async {
@@ -12,8 +10,8 @@ Future<void> main() async {
 
   // final game = DrawCross();
   // final game = MoveCross();
-  final game = RotateCross();
+  // final game = RotateCross();
+  final game = BaseAnime();
 
   runApp(GameWidget(game: game));
 }
-
